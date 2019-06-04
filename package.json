@@ -1,0 +1,16 @@
+{
+  "name": "clinikk-task",
+  "version": "1.0.0",
+  "description": "Clinikk Hiring Assignment",
+  "main": "index.js",
+  "author": "Ravi Kumar Prasad <7ravikp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn test:server && yarn test:client",
+    "test:server": "cd server && yarn test",
+    "test:client": "cd client && yarn test",
+    "postinstall": "yarn install:server && yarn install:client",
+    "install:server": "cd server && yarn",
+    "install:client": "cd client && yarn"
+  }
+}

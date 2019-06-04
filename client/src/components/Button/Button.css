@@ -1,0 +1,29 @@
+.styled-button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.styled-button:enabled {
+  background-color: #280aac;
+}
+
+.styled-button:disabled {
+  background-color: #432baa;
+}
+
+.styled-button:enabled:hover {
+  background-color: #1c067e;
+  transform: scale(1.01);
+}
+
+.small-button {
+  padding: 0.5rem 1rem;
+}
+
+.large-button {
+  padding: 1rem 1.5rem;
+}

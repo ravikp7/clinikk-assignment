@@ -1,0 +1,64 @@
+.modal-overlay {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 15rem;
+  height: 8rem;
+  border-radius: 2px;
+}
+
+.status-card-message {
+  font-size: 1.5 rem;
+}
+
+.loading-card {
+  position: absolute;
+}
+
+.loading-bubble {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  margin: 0.5rem;
+  animation: expand 0.75s ease-in-out infinite;
+}
+
+.loading-bubble:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.loading-bubble:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.loading-bubble:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.loading-bubble:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+}
